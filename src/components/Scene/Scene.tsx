@@ -22,7 +22,7 @@ function Scene() {
         fov: 40,
         rotation: [0, Math.PI / 3, 0],
       }} shadows={"soft"} dpr={[1, 5]}>
-        <EffectComposer enabled={true} disableNormalPass={true}>
+        <EffectComposer enabled={true} enableNormalPass={false}>
           <Bloom intensity={bloom} luminanceThreshold={0.25} mipmapBlur={true}></Bloom>
           <Lights></Lights>
           <Tree></Tree>
